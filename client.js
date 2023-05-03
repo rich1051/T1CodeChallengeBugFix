@@ -1,19 +1,63 @@
+console.log('THIS IS THE NEW VERSION');
+console.log('Step 0 complete! client.js loaded!');
+            
+// Write your code here!
+
+// 2. Make a new empty array called myScrabbleTiles.
+// 3. Put these 6 tile objects into myScrabbleTiles:
+/*
+  { tile: 'N', score: 1 }
+  { tile: 'K', score: 5 }
+  { tile: 'Z', score: 10 }
+  { tile: 'X', score: 8 }
+  { tile: 'D', score: 2 }
+  { tile: 'A', score: 1 }
+*/
+let myScrabbleTiles = [];
+
+console.log(myScrabbleTiles);
+
+myScrabbleTiles.push(
+  {tile: 'N', score: 1},
+  {tile: 'K', score: 5},
+  {tile: 'Z', score: 10},
+  {tile: 'X', score: 8},
+  {tile: 'D', score: 2},
+  {tile: 'A', score: 1}
+  );
+
+  console.log('Expect initial SIX object tiles:', myScrabbleTiles);
+
+  // 4. Remove the last tile from myScrabbleTiles.
+myScrabbleTiles.pop();
+
+console.log('Expect deletion of last object tile:', myScrabbleTiles);
+
+// 5. Add the following new tile to myScrabbleTiles:
+/*
+  { tile: 'F', score : 4 }
+*/
+
+myScrabbleTiles.push({tile: 'F', score: 4});
+
+console.log('Expect addition of new object tile:', myScrabbleTiles);
+
+console.log('------------------------------------------------------------');
+
 /*
 You’ve been given an index.html file and this starter js file.
 
 0. Source this file into the index.html file. You should see a console log when this is done correctly.
   -- There is no JS to write for this step.
 */
-
+console.log('THIS IS THE OLD VERSION');
 console.log('Step 0 complete! client.js loaded!');
             
 // Write your code here!
 
-// 1. Start with the number 29 and set that equal to a variable named ‘highScore’;
-let highScore = 29;
-console.log(highScore);
-// 2. Make a new empty array called myScrabbleTiles.
-let myScrabbleTiles = [];
+let myPrabbleTiles = [];
+
+console.log(myPrabbleTiles);
 // 3. Put these 6 tile objects into myScrabbleTiles:
 /*
   { tile: 'N', score: 1 }
@@ -24,36 +68,36 @@ let myScrabbleTiles = [];
   { tile: 'A', score: 1 }
 */
 const tileN = {
-  title: 'N',
+  tile: 'N',
   score: 1
 };
 const tileK = {
-  title: 'K',
+  tile: 'K',
   score: 5
 };
 const tileZ = {
-  title: 'Z',
+  tile: 'Z',
   score: 10
 };
 const tileX = {
-  title: 'X',
+  tile: 'X',
   score: 8
 };
 const tileD = {
-  title: 'D',
+  tile: 'D',
   score: 2
 };
 const tileA = {
-  title: 'A',
+  tile: 'A',
   score: 1
 };
 // ^THERE IS DEFINITELY A MORE CONCISE WAY TO DO THIS, BUT I'M JUST SPITBALLIN'
-myScrabbleTiles.push(tileN, tileK, tileZ, tileX, tileD, tileA);
-console.log(myScrabbleTiles);
+myPrabbleTiles.push(tileN, tileK, tileZ, tileX, tileD, tileA);
+console.log('Expect initial SIX object tiles:', myPrabbleTiles);
 
 // 4. Remove the last tile from myScrabbleTiles.
-myScrabbleTiles.pop();
-console.log(myScrabbleTiles);
+myPrabbleTiles.pop();
+console.log('Expect deletion of last object tile:', myPrabbleTiles);
 
 // 5. Add the following new tile to myScrabbleTiles:
 /*
@@ -63,28 +107,80 @@ const tileF = {
   title: 'F',
   score: 4
 };
-myScrabbleTiles.push(tileF);
-console.log(myScrabbleTiles);
+myPrabbleTiles.push(tileF);
+console.log('Expect addition of new object tile:', myPrabbleTiles);
 
-// 6. Complete this function. It needs to be given an array of tile objects. The function will use a for-loop and return the sum of all the scores in the given array.
-function sumTiles(anArray) {
-  let sumScore = 0;
-  for (let i = 0; i < anArray.length; i++) {
-    sumScore += anArray[i].score;
-  } 
-  return sumScore
-}
+// console.log('Step 0 complete! client.js loaded!');
 
-// 7. Use the function above to get the total score for myScrabbleTiles and assign the value to a variable called "myScore".
-let myScore = sumTiles(myScrabbleTiles);
+// let myScrabbleTiles = [];
 
-// 8. Check whether or not your score is higher than the highScore.
-console.log('I dominated and got a score of:', myScore);
-console.log('The previous score was:', highScore);
+// console.log(myScrabbleTiles);
 
-// 8-1 If your score is higher, change highScore to the new high score.
-if (myScore > highScore) {
-  highScore = myScore;
-}
-console.log('Because I beat the previous high score, the new high score is:', highScore);
-// DONE!
+// myScrabbleTiles.push(
+//   {tile: 'N', score: 1},
+//   {tile: 'K', score: 5},
+//   {tile: 'Z', score: 10},
+//   {tile: 'X', score: 8},
+//   {tile: 'D', score: 2},
+//   {tile: 'A', score: 1}
+//   );
+
+// console.log('Expect initial SIX object tiles:', myScrabbleTiles);
+
+// myScrabbleTiles.pop();
+
+// console.log('Expect deletion of last object tile:', myScrabbleTiles);
+
+// myScrabbleTiles.push({tile: 'F', score: 4});
+
+// console.log('Expect addition of new object tile:', myScrabbleTiles);
+
+// -------------------------------------------------------------------------
+
+// console.log('Step 0 complete! client.js loaded!');
+
+// let myPrabbleTiles = [];
+
+// console.log(myPrabbleTiles);
+
+// const tileN = {
+//   tile: 'N',
+//   score: 1
+// };
+// const tileK = {
+//   tile: 'K',
+//   score: 5
+// };
+// const tileZ = {
+//   tile: 'Z',
+//   score: 10
+// };
+// const tileX = {
+//   tile: 'X',
+//   score: 8
+// };
+// const tileD = {
+//   tile: 'D',
+//   score: 2
+// };
+// const tileA = {
+//   tile: 'A',
+//   score: 1
+// };
+
+// myPrabbleTiles.push(tileN, tileK, tileZ, tileX, tileD, tileA);
+
+// console.log('Expect initial SIX object tiles:', myPrabbleTiles);
+
+// myPrabbleTiles.pop();
+
+// console.log('Expect deletion of last object tile:', myPrabbleTiles);
+
+// const tileF = {
+//   title: 'F',
+//   score: 4
+// };
+
+// myPrabbleTiles.push(tileF);
+
+// console.log('Expect addition of new object tile:', myPrabbleTiles);
